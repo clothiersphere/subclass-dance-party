@@ -1,5 +1,8 @@
 body, html{
   height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size:cover;
 }
 body{
   margin: 0px;
@@ -21,10 +24,16 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
 .dancerTwo{
+  border:10px solid red;
+  border-radius:10px;
   position:absolute;
 }
+.dancerThree{
+  /*position:absolute;*/
+}
+
+

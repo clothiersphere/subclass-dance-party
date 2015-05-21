@@ -1,5 +1,8 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  blinky = '<span class="dancerTwo"></span>';
+  this.$node.prepend(blinky);
+
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);

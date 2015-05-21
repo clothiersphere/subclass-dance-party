@@ -5,8 +5,6 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.setPosition(top, left);
 };
 
-Dancer.prototype.constructor = Dancer;
-
 Dancer.prototype.step = function(){
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
@@ -26,3 +24,7 @@ Dancer.prototype.setPosition = function(top, left){
 };
 
 
+Dancer.prototype.everyBodyDanceNow = function(){
+  console.log(this.$node);
+  this.$node.rotate(50);
+};

@@ -3,8 +3,26 @@ var Brony = function(top, left, timeBetweenSteps) {
   //this.tripOut();
   // this.shake();
   var library = ["brony.gif", "carlton.gif", "corgi.gif", "kanye.gif", "llama.gif", "pokellama.gif", "rooster.gif", "snail.gif"];
-  var gif = '<img class="dancerTwo" src="' + library[Math.floor(Math.random() * library.length)] + '" style="width:204px;height:128px">'
-  this.$node = $(gif);
+
+  var gif = library[Math.floor(Math.random() * library.length)];
+
+  var size = "width:204px;height:128px";
+
+  var gifTag = '<img class="dancerThree" src="' + gif + '" style="' + size + '">';
+
+  this.$node.prepend(gifTag);
+
+  /*this.$node.on("hover",function (e) {
+    console.log("fff");
+  });*/
+
+  this.$node.hover(function (e) {
+    $('.dancerThree', this).css({width : "306px", height : "192px"});
+  });
+
+  this.$node.on("click", function (e) {
+    $(this).toggle("scale");
+  });
 
 };
 
