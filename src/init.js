@@ -40,6 +40,14 @@ $(document).ready(function(){
   }
  });
 
+ $(".lineUpStraightButton").on("click", function(event){
+
+  for (var i = 0; i<window.dancers.length; i++){
+    // window.dancers[i].$node.animate({left: 50});
+    window.dancers[i].setPosition(500, 100 + 100 * i);
+  }
+ });
+
   $(".everyBodyDanceNow").on("click", function(event){
 
   for (var i = 0; i<window.dancers.length; i++){

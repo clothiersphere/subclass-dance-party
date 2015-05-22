@@ -2,7 +2,7 @@ var Brony = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   //this.tripOut();
   // this.shake();
-  var library = ["brony.gif", "carlton.gif", "corgi.gif", "kanye.gif", "llama.gif", "pokellama.gif", "rooster.gif", "snail.gif"];
+  var library = ["brony.gif", "carlton.gif", "corgi.gif", "kanye.gif", "llama.gif", "pokellama.gif", "rooster.gif", "snail.gif", "taylor.gif", "link.gif", "ariana.gif"];
 
   var gif = library[Math.floor(Math.random() * library.length)];
 

@@ -25,6 +25,16 @@ Dancer.prototype.setPosition = function(top, left){
 
 
 Dancer.prototype.everyBodyDanceNow = function(){
-  console.log(this.$node);
-  this.$node.rotate(50);
+  var that = this;
+  var thatNode = that.$node;
+  $('.dancerThree', thatNode).css({transform : "rotate(-30deg)"});
+    setTimeout(function(){
+      $('.dancerThree', thatNode).css({transform : "rotate(30deg)"});
+
+      setTimeout(function() {
+        that.everyBodyDanceNow.call(that);
+      }, 200);
+
+  }, 200);
+
 };
